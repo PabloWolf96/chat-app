@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2talk</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div id="chat">
+      <div id="window">
+        <div id="output"></div>
+        <div id="typing-area"></div>
+      </div>
+      <input
+        type="text"
+        id="handle"
+        placeholder="Handle"
+        value="<%=username %>"
+        disabled
+      />
+      <input type="text" id="message" placeholder="Message" />
+      <button id="send">Send</button>
+    </div>
+    <script src="/public/scripts/script.js"></script>
+  </body>
+</html>

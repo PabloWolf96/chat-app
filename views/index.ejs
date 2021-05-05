@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2talk</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body>
+            <div class="container">
+                <div id="error-message">
+                    
+<% if (typeof err !="undefined") { %>
+                      <span><%= err %></span>
+                    <%}%>
+
+                </div>
+              
+                <h2 class="heading">Login System</h2>
+
+              
+                
+                
+               <form action="/auth" method="POST">
+                 
+                    <div class="form">
+                        <input type="text" class="form-control" placeholder="Username" id="username" name="username">
+                        
+                    </div>
+                    
+                    <button class="btn" type="submit"  id="sign-in">Sign In</button>
+               </form>
+                
+            </div>
+        </div>
+  </body>
+</html>
